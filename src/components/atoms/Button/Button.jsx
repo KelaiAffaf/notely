@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { colors } from '../../../globalStyle/variabls.js'; // Assuming it's a JavaScript file
-import './Button.css'; // Assuming it contains styles for the button
+
 
 const getButtonColors = (buttonType) => {
   switch (buttonType) {
@@ -60,6 +60,7 @@ const Button = ({ text, icon, buttonType }) => {
     alignItems: 'center',
     justifyContent: 'center',
     transition: 'background-color 0.3s, color 0.3s',
+    gap:"8px"
   };
 
   const iconStyle = {
